@@ -1,0 +1,33 @@
+{
+  "name": "react-ts",
+  "version": "1.0.0",
+  "description": "Minimalistic skeleton repo for React with Typescript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Uninspiriert/react-typescript-skeleton.git"
+  },
+  "scripts": {
+    "build": "npm run typescript && npm run webpack",
+    "build:w": "./node_modules/.bin/concurrently \"npm run typescript:w\" \"npm run webpack:w\"",
+    "typescript": "./node_modules/.bin/tsc",
+    "typescript:w": "npm run typescript -- --watch",
+    "webpack": "./node_modules/.bin/webpack --progress --colors --display-error-details",
+    "webpack:w": "npm run webpack -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^0.14.49",
+    "@types/react-dom": "^0.14.18",
+    "concurrently": "^3.1.0",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^2.0.10",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  }
+}

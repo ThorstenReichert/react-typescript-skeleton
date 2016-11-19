@@ -35,3 +35,13 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# VSCode
+.vscode 
+
+# dist folder
+dist 
+
+# compiled files in app 
+app/*.js 
+app/*.js.map
